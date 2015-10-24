@@ -248,12 +248,6 @@ module.exports = function (grunt) {
             cwd: '<%= config.app %>/images',
             src: '{,*/}*.{gif,jpeg,jpg,png}',
             dest: '<%= config.dist %>/images'
-          }, {
-            expand : true,
-            flatten : true,
-            cwd : 'bower_components/flipcountdown',
-            src : '**/*.{png,jpg,jpeg,gif}',
-            dest : '<%= config.dist %>/styles/img/'
           }
         ]
       }
@@ -339,7 +333,15 @@ module.exports = function (grunt) {
           cwd: '.',
           src: 'bower_components/bootstrap-sass/assets/fonts/bootstrap/*',
           dest: '<%= config.dist %>'
-        }]
+        }, {
+          expand: true,
+          flatten: true,
+          dot: true,
+          cwd: '.',
+          src: 'bower_components/76d-social-icons/assets/fonts/*',
+          dest: '<%= config.dist %>/fonts/'
+        }
+      ]
       }
     },
 
