@@ -1,0 +1,48 @@
+.navbar-brand {
+  padding: (($navbar-height - 97px) / 2) 36px;
+}
+
+.navbar-nav > li > a {
+    line-height: 30px;
+    font-size: 20px;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 16px;
+    }
+
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+
+    @media (min-width: $screen-md-min) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      padding-top: ($navbar-height - 69);
+      padding-bottom: 39px;
+
+    }
+    /* .navbar-nav > li > a  { $navbar-padding-vertical } */
+  }
+
+  .si-square {
+    background-color: $primary-color;
+    color: #FFF;
+    font-size: 20px;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 16px;
+      padding: 2px;
+    }
+
+
+    padding: 4px;
+  }
