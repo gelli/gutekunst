@@ -11,6 +11,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css(.) styles/vendor.css -->
+    <link rel="stylesheet" href="bower_components/76d-social-icons/assets/css/social-icons.css" />
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
@@ -27,44 +28,98 @@
       <p class="browsehappy">Sie verwenden einen <strong>veralteten</strong> Browser. Bitte <a href="http://browsehappy.com/">aktualisieren sie ihren Browser</a> für eine bessere Darstellung.</p>
     <![endif]-->
 
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
+    <nav class="navbar navbar-default navbar-static-top container">
         <div class="navbar-header">
+
+          <!-- mobile view burger button -->
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <!-- // mobile view burger button -->
+
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.svg" width="149" alt="" />
+          </a>
         </div>
+
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
-            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+            <li ><a href="#">Spedition</a></li> <!-- class="active" -->
+            <li><a href="#about">Zahlen &amp; Fakten</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><a class="fb-icon" href="#"><i class="si-square si-facebook"></i></a></li>
           </ul>
         </div><!--/.nav-collapse -->
-      </div>
     </nav>
     <div class="container">
+      <div class="row">
+        <figure>
+          <img class="img-responsive" src="images/hero.png" />
+          <figcaption>Speditionsgelände aus der Luft</figcaption>
+        </figure>
+      </div>
+
+      <div class="row row-white">
+        <div class="col-md-4 col-md-offset-1">
+          <h1>SPEDITION <br/><small class="pad">Unterwegs seit 1950</small></h1>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Es gibt im Moment in diese Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich lese nicht sehr viele Zeitungen, aber ich habe gehört viele Situationen. Erstens: wir haben nicht offensiv gespielt. Es gibt keine deutsche Mannschaft spielt offensiv und die Name offensiv wie Bayern.
+          </p>
+          <p>
+            Letzte Spiel hatten wir in Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir müssen nicht vergessen Zickler. Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese Wörter, ist möglich verstehen, was ich hab gesagt? Danke. Offensiv, offensiv ist wie machen wir in Platz.
+          </p>
+          <p>
+            Zweitens: ich habe erklärt mit diese zwei Spielert: nach Dortmund brauchen vielleicht Halbzeit Pause. Ich habe auch andere Mannschaften gesehen in Europa nach diese Mittwoch. Ich habe gesehen auch zwei Tage die Training. Ein Trainer ist nicht ein Idiot! Ein Trainer sei sehen was passieren in Platz. In diese Spiel es waren zwei, drei diese Spieler waren schwach wie eine Flasche leer! Haben Sie gesehen Mittwoch, welche Mannschaft hat gespielt Mittwoch? Hat gespielt Mehmet oder gespielt Basler oder hat gespielt Trapattoni? Diese Spieler beklagen mehr als sie spielen! Wissen Sie, warum die Italienmannschaften
+          </p>
+        </div>
+      </div>
+
+      <div class="row row-grey">
+        <div class="col-md-10 col-md-offset-1">
+          <h1>Zahlen &amp; Fakten</h1>
+          <h1>3. Generation<br/><small class="pad">Generationen als Familienbetrieb</small></h1>
+          <h2>Gründung</h2>
+          <h2>Nutzlast</h2>
+          <h2>KM im Jahr 2014</h2>
+          <h2>Mitarbeiter</h2>
+          <h2>QM Lagerfläche</h2>
+          <h2>Standorte</h2>
+          <h2>Ø Betriebszugehörigkeit</h2>
+        </div>
+      </div>
+
+      <div class="row row-white">
+        <div class="col-md-5 col-md-offset-1">
+          <h1>Kontakt</h1>
+          <h2>Fritz Gutekunst GmbH + CO.KG</h2>
+          <p>
+            An der Kraich2, 76703 Kraichtal<br/>
+            T: 07250 92 77 0-0<br/>
+            F: 07250 92 77 0-26</p>
+          <p>info@gutekunst-spedition.de</p>
+          <p>Folgen Sie uns auf <a href="#">facebook.com/fritzgutekunst</a></p>
+
+          <h2 style="padding-top: 50px;">Ansprechpartner</h2>
+          <div class="row">
+            <div class="col-xs-6">
+              <p>Stefan Gutekunst<br/>Geschäftsführung</p>
+            </div>
+            <div class="col-xs-6">
+              <p>Stefan Gutekunst<br/>Disponent</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <h1>Karte</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.71643270622!2d8.72328851080323!3d49.12135603364784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479798d5c28c29c1%3A0xc0f03462c5d02314!2sFritz+Gutekunst+GmbH+%26+Co.+KG!5e1!3m2!1sde!2sde!4v1445703637335" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+
 
     </div>
 

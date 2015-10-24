@@ -1,29 +1,36 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100|Roboto+Condensed:700,400);
 
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 $font-family-base: "Roboto";
-$body-bg: #777;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+$font-size-h1: 36px;
+$font-size-h2: 20px;
+
+$headings-font-family: "Roboto Condensed";
+/* $headings-font-weight; */
+/* $headings-line-height; */
+$body-bg: #282828;
 $btn-primary-bg: rgba(255, 255, 255, 0.6);
 $btn-primary-color: #3c899d;
 $panel-bg: rgba(255, 255, 255, 0.6);
 $navbar-height: 156px;
+$navbar-margin-bottom: 0;
+
+
+
+
+$primary-color: #1a5128;
+
+$text-color: $primary-color;
+$headings-small-color: $primary-color;
+$navbar-default-link-color: $primary-color;
+$navbar-default-link-active-color: $primary-color;
+
 
 // bower:scss
 @import "bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-
-
-html {
-  background: url(../images/bgsmaller.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.row {
-  margin-top: 50px;
-}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -32,115 +39,61 @@ html {
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
+.navbar-brand {
+  padding: (($navbar-height - 97px) / 2) 36px;
+}
+
+
+.navbar-nav > li > a {
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: ($navbar-height - 69);
+    padding-bottom: 39px;
+    /* .navbar-nav > li > a  { $navbar-padding-vertical } */
+  }
+
+  .si-square {
+    background-color: $primary-color;
+    color: #FFF;
+    font-size: 20px;
+    padding: 4px;
+  }
+
+.row-white {
+  padding-top: 150px;
+  padding-bottom: 200px;
+  background-color: #fff;
+}
+
+.row-grey {
+  padding-top: 150px;
+  padding-bottom: 200px;
+  background-color: #dfe6e1;
+}
+
 body {
-//  padding-top: 20px;
-//  padding-bottom: 20px;
+  font-weight: 100;
 }
 
-#logo {
-  background: url(../images/logo.png) no-repeat top center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  height: 200px;
+.pad {
+  padding-left: 2em;
 }
 
-.info-box > .panel {
-  height: 200px;
+figure {
+     position: relative;
 }
-
-.info-box h2 {
-  color: #3c899d;
+figure img {
+    display: block;
 }
-
-.no-padding {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.countdown-box {
-  margin: 0 auto;
-  width: 320px;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
-}
-
-/* Custom page footer */
-footer {
-  margin-top: 100px !important;
-  padding-top: 19px;
-  color: #e5e5e5;
-  border-top: 1px solid #e5e5e5;
-
-  a {
-    color: #e5e5e5;
-  }
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+figcaption {
+    position: absolute;
+    bottom: 34px;
+    left: 20px;
+    right: 0;
 }

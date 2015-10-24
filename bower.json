@@ -2,6 +2,7 @@
   "name": "gutekunst",
   "private": true,
   "dependencies": {
+    "76d-social-icons": "~1.0.4",
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.3"
   },
