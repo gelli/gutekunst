@@ -6,7 +6,8 @@
     // Handle dependencies
     var smoothScroll = window.smoothScroll;
     smoothScroll.init({
-      easing: 'easeInOutQuart'
+      easing: 'easeInOutQuart',
+      updateURL: false
     });
 
     // Your application's code
