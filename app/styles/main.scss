@@ -17,9 +17,6 @@ $panel-bg: rgba(255, 255, 255, 0.6);
 $navbar-height: 156px;
 $navbar-margin-bottom: 0;
 
-
-
-
 $primary-color: #1a5128;
 
 $text-color: $primary-color;
@@ -47,12 +44,26 @@ $navbar-default-link-active-color: $primary-color;
 .navbar-nav > li > a {
     line-height: 30px;
     font-size: 20px;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 16px;
+    }
+
     font-family: 'Roboto Condensed';
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    padding-left: 40px;
-    padding-right: 40px;
+
+    @media (min-width: $screen-md-min) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
     padding-top: ($navbar-height - 69);
     padding-bottom: 39px;
     /* .navbar-nav > li > a  { $navbar-padding-vertical } */
@@ -62,18 +73,31 @@ $navbar-default-link-active-color: $primary-color;
     background-color: $primary-color;
     color: #FFF;
     font-size: 20px;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 16px;
+      padding: 2px;
+    }
+
+
     padding: 4px;
   }
 
-.row-white {
+.content-section {
   padding-top: 150px;
   padding-bottom: 200px;
+
+  @media (max-width: $screen-sm-min) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.row-white {
   background-color: #fff;
 }
 
 .row-grey {
-  padding-top: 150px;
-  padding-bottom: 200px;
   background-color: #dfe6e1;
 }
 
