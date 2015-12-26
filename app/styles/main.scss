@@ -25,6 +25,13 @@
   }
 }
 
+.hero-image {
+  background: url(../images/hero.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 65vh;
+  max-height: 800px;
+}
+
 .row-white {
   background-color: #fff;
 }
