@@ -63,7 +63,7 @@ module.exports = function (grunt) {
       options: {
         notify: false,
         background: true,
-        browser: "firefoxDeveloperEdition"
+        browser: 'firefoxDeveloperEdition'
       },
       livereload: {
         options: {
