@@ -77,15 +77,24 @@ figcaption {
 
 }
 
-hr {
+#zahlen > div {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-ul.facts {
-  list-style: none;
-  list-style-type: none;
-  padding: 0;
-  margin: 0 auto;
-  width: 80%;
+.zahlen-headline {
+  max-width: 14em;
+}
+
+.facts {
+  max-width: 14em;
+  ul {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+  }
 
   @media (min-width: $screen-md-min) {
     margin-top: 100px;
@@ -106,10 +115,11 @@ li.line {
 }
 
 .globe {
+  text-align: left;
+  width: 14em;
   background: url(../images/globe.png) no-repeat right center;
-  height: 162px;
   padding-top: 80px;
-  padding-right: 30px;
+  /*padding-right: 30px; */
 
     .fact-number {
       font-size: 40px;
@@ -122,7 +132,7 @@ li.line {
 
 .cap {
   background: url(../images/cap.png) no-repeat left top;
-  height: 162px;
+  max-width: 14em;
   padding-top: 50px;
   padding-left: 20px;
 
@@ -133,22 +143,21 @@ li.line {
     @media (min-width: $screen-md-min) {
       margin-top: 70px;
     }
-
-
 }
 
 .generations {
+  max-width: 14em;
   background: url(../images/curvedarrow.png) no-repeat left top;
-  height: 162px;
-  padding-top: 20px;
-  padding-left: 40px;
+  padding-top: 22px;
+  padding-left: 25px;
 
-    .fact-number {
+  .fact-number {
       font-size: 40px;
     }
 }
 
 .locations {
+  max-width: 14em;
   background: url(../images/locations.png) no-repeat left top;
   min-height: 231px;
   padding-top: 120px;
@@ -167,6 +176,7 @@ li.line {
 .storage {
   background: url(../images/storage.png) no-repeat center bottom;
   padding-bottom: 40px;
+
   width: 217px;
     .fact-number {
       font-size: 40px;
