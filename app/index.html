@@ -29,48 +29,37 @@
     <![endif]-->
 
     <nav class="navbar navbar-default navbar-static-top">
-        <div class="navbar-header">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
-          <!-- mobile view burger button -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- // mobile view burger button -->
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.svg" width="149" alt="" />
+        </a>
+      </div>
 
-          <a class="navbar-brand" href="#">
-            <img src="images/logo.svg" width="149" alt="" />
-          </a>
-        </div>
-
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li ><a data-scroll href="#spedition">Spedition</a></li> <!-- class="active" -->
-            <li><a data-scroll href="#zahlen">Zahlen &amp; Fakten</a></li>
-            <li><a data-scroll href="#contact">Kontakt</a></li>
-            <li><a class="fb-icon" href="https://www.facebook.com/FritzGutekunst" target="_blank"><i class="si-square si-facebook"></i></a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a data-scroll href="#spedition">Spedition</a></li>
+          <li><a data-scroll href="#zahlen">Zahlen &amp; Fakten</a></li>
+          <li><a data-scroll href="#contact">Kontakt</a></li>
+          <li><a class="fb-icon" href="https://www.facebook.com/FritzGutekunst" target="_blank"><i class="si-square si-facebook"></i></a></li>
+        </ul>
+      </div>
     </nav>
 
-
-
-        <div class="hero-image"></div>
-
-        <!-- <figure>
-          <img class="img-responsive" src="images/hero.png" />
-          <figcaption>Speditionsgelände aus der Luft</figcaption>
-        </figure> -->
-
-
+    <div class="hero-image"></div>
 
     <div class="row-white">
       <div id="spedition" class="content-section container">
         <div class="row">
           <div class="col-md-4 col-xs-offset-1">
-            <h1 class="text-indented">Spedition<br/><small>Unterwegs seit 1950</small></h1>
+            <h2 class="text-indented">Spedition<br/><small>Unterwegs seit 1950</small></h1>
           </div>
           <div class="col-md-6 col-md-offset-0 col-xs-offset-1 col-xs-10">
             <p>
@@ -92,7 +81,7 @@
 
         <div class="col-md-4 col-md-push-4 text-center fact">
           <div class="col-centered-auto text-left zahlen-headline">
-            <h1 class="text-indented">Zahlen<br/>und Fakten</h1>
+            <h2 class="text-indented">Zahlen<br/>und Fakten</h1>
           </div>
         </div>
 
@@ -139,35 +128,61 @@
           </div>
         </div>
       </div>
-
-      <div class="row-white">
-        <div id="contact" class="content-section container">
-          <div class="row">
-            <div class="col-md-5 col-md-offset-1 col-xs-10 col-xs-offset-1">
-              <h1>Kontakt</h1>
-              <h2>Fritz Gutekunst GmbH + CO.KG</h2>
-              <p>
-                An der Kraich2, 76703 Kraichtal<br/>
-                T: 07250 92 77 0-0<br/>
-                F: 07250 92 77 0-26</p>
-              <p>info@gutekunst-spedition.de</p>
-              <p>Folgen Sie uns auf <a href="#">facebook.com/fritzgutekunst</a></p>
-
-              <h2 style="padding-top: 50px;">Ansprechpartner</h2>
-              <div class="row">
-                <div class="col-xs-6">
-                  <p>Stefan Gutekunst<br/>Geschäftsführung</p>
-                </div>
-                <div class="col-xs-6">
-                  <p>Stefan Gutekunst<br/>Disponent</p>
-                </div>
+    </div>
+    <div class="row-white">
+      <div id="contact" class="content-section container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Kontakt</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <h3 class="marginBottom30">Kraichtal</h3>
+            <h4>Fritz Gutekunst GmbH + Co. KG</h4>
+            <p>T: 07250 92 77 0-0<br/>
+            F: 07250 92 77 0-26</p>
+          </div>
+          <div class="col-sm-4">
+            <h3 class="marginBottom30">Heldrungen</h3>
+            <h4>Fritz Gutekunst GmbH + Co. KG</h4>
+            <p>T: 07250 92 77 0-0<br/>
+            F: 07250 92 77 0-26</p>
+          </div>
+          <div class="col-sm-4 management">
+            <h4 class="marginBottom30">Geschäftsführung</h4>
+            <h4>Peter Gutekunst</h4>
+            <p>T: 07250 92 77 0-0</p>
+            <h4>Stefan Gutekunst</h4>
+            <p>T: 07250 92 77 0-0</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm-4">
+                <h4>Abrechnung</h4>
+                <p>T: 07250 92 77 0-0</p>
+              </div>
+              <div class="col-sm-4">
+                <h4>Disposition</h4>
+                <p>T: 07250 92 77 0-0</p>
+              </div>
+              <div class="col-sm-4">
+                <h4>Werkstattleitung</h4>
+                <p>T: 07250 92 77 0-0</p>
               </div>
             </div>
-            <div class="col-md-5 col-md-offset-0 col-xs-10 col-xs-offset-1">
-              <h1>Karte</h1>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.71643270622!2d8.72328851080323!3d49.12135603364784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479798d5c28c29c1%3A0xc0f03462c5d02314!2sFritz+Gutekunst+GmbH+%26+Co.+KG!5e1!3m2!1sde!2sde!4v1445703637335" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
           </div>
+          <div class="col-sm-4 fbhint">
+            <p>Folgen sie uns auf<br/>
+            <a href="#">facebook.com/fritzgutekunst</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <figure>
+            <img class="img-responsive" src="images/belegschaft.png" />
+          </figure>
         </div>
       </div>
     </div>

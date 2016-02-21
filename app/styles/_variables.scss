@@ -2,8 +2,9 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 $font-family-base: "Roboto";
 $font-size-base: 16px;
 $line-height-base: 1.5;
-$font-size-h1: 36px;
-$font-size-h2: 20px;
+$font-size-h2: 36px;
+$font-size-h3: 24px;
+$font-size-h4: 20px;
 
 $headings-font-family: "Roboto Condensed";
 $body-bg: #282828;
@@ -19,3 +20,4 @@ $text-color: $primary-color;
 $headings-small-color: $primary-color;
 $navbar-default-link-color: $primary-color;
 $navbar-default-link-active-color: $primary-color;
+$navbar-padding-horizontal: 0;
